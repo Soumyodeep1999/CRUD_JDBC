@@ -2,7 +2,7 @@ package DatabaseLayer.queryRepo;
 
 public class QueryRepo {
 
-    private String tableName = "student";
+    private static String tableName = "student";
     public static String addStudentQuery = "insert into "+tableName+" (sid,sname) values (?,?)";
     public static String deleteStudentQuery = "delete from "+tableName+" where sid=?";
     public static String viewStudentDataQuery = "select * from "+tableName;
